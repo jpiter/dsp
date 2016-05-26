@@ -52,7 +52,7 @@ I installed Python 3.5.1 |Anaconda 4.0.0 (x86_64). Python 2 will not get any new
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-I can start Python by typing in "python", "spyder" or "ipython", for example. All of the above start loading with the name for the version used, except for Spyder, where you access GUI option "about python" to look for the version used.
+I can start Python by typing in "python", "spyder" or "ipython", for example, in the terminal window. All of the above start loading with the name for the version used, except for Spyder, where you access GUI option "about python" to look for the version used.
 
  
 

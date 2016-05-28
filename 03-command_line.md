@@ -13,7 +13,20 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+```rm -rf anydirectory``` deletes a directory even if it is not empty
+```rm *.txt``` deletes all text files
+```cp dir1/file1.txt dir2/``` would copy file1.txt from dir1 to dir2
+```touch newfile.txt``` creates new text file
+```grep someword *.txt``` searches for the word "someword" in all text files in the directory
+```cat > newfile.txt``` creates and opens input to a text file, you have to finish input with CTRL-D
+```export``` creates new environment variable
+```echo $VAR``` accesses the value of environmental variable VAR
+```$|$``` takes the output from the command on the left from | , and "pipes" it to the command on the right
+```mv``` renames files and directories
+```env``` prints out all environmental(global) variables
+```env | grep USER``` finds all environmental variables with a word USER in the name of a variable or in its value
+
+
 
 ---
 

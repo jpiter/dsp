@@ -13,6 +13,8 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
+> > Q1 Response:
+
 ```rm -rf anydirectory``` deletes a directory even if it is not empty
 
 
@@ -37,17 +39,16 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ```echo $VAR``` accesses the value of environmental variable VAR
 
 
-```$|$``` takes the output from the command on the left from | , and "pipes" it to the command on the right
-
-
-```mv``` renames files and directories
-
-
 ```env``` prints out all environmental(global) variables
 
 
 ```env | grep USER``` finds all environmental variables with a word USER in the name of a variable or in its value
 
+
+```$|$``` takes the output from the command on the left from | , and "pipes" it to the command on the right
+
+
+```mv``` renames files and directories
 
 
 ---
@@ -63,7 +64,25 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Q2 Response:
+
+`ls` lists out all directories and files in working directory
+
+
+`ls -a` includes directory entries whose name starts with a .
+
+
+`ls -l` lists directories and file names with details; the total size of all files is displayed in the terminal.
+
+
+`ls -lh` uses unit suffixes Byte, Kilobyte, etc., to display file size.
+
+
+`ls -lah` includes directory entries whose name starts with a . with details
+
+`ls -t` sorts directory entries by time modified (most recently modified first) 
+
+`ls -Glp` this combination displays content of the directory with details using colorized input and a backslash(/) after each directory name
 
 ---
 

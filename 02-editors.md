@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
-I will try to learn vim, since it is default on many systems. 
+> > I will try to learn vim, since it is default on many systems. 
 
 --
 
@@ -67,7 +67,9 @@ I will try to learn vim, since it is default on many systems.
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I will work with Spyder, the interface reminds me of R. 
-P.S. I need to practice typing.
+> > I will work with Spyder, the interface reminds me of R. 
+
+
+> > P.S. I need to practice typing.
 
  

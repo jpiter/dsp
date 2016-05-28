@@ -80,7 +80,9 @@ What do the following commands do:
 
 `ls -lah` includes directory entries whose name starts with a . with details
 
+
 `ls -t` sorts directory entries by time modified (most recently modified first) 
+
 
 `ls -Glp` this combination displays content of the directory with details using colorized input and a backslash(/) after each directory name
 
@@ -90,7 +92,18 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Q3 Response:
+
+`ls -R` recursively lists all subdirectories encountered
+
+`ls -S` sort files by size
+
+`ls -r` reverses the order of the sort
+
+`ls -m` displays the names as a comma-separated list
+
+`ls -1` displays directory content as one entry per line
+
 
 ---
 

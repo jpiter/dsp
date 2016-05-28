@@ -15,40 +15,40 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > Q1 Response:
 
-```rm -rf anydirectory``` deletes a directory even if it is not empty
+> > ```rm -rf anydirectory``` deletes a directory even if it is not empty
 
 
-```rm *.txt``` deletes all text files
+> > ```rm *.txt``` deletes all text files
 
 
-```cp dir1/file1.txt dir2/``` would copy file1.txt from dir1 to dir2
+> > ```cp dir1/file1.txt dir2/``` would copy file1.txt from dir1 to dir2
 
 
-```touch newfile.txt``` creates new text file
+> > ```touch newfile.txt``` creates new text file
 
 
-```grep someword *.txt``` searches for the word "someword" in all text files in the directory
+> > ```grep someword *.txt``` searches for the word "someword" in all text files in the directory
 
 
-```cat > newfile.txt``` creates and opens input to a text file, you have to finish input with CTRL-D
+> > ```cat > newfile.txt``` creates and opens input to a text file, you have to finish input with CTRL-D
 
 
-```export``` creates new environment variable
+> > ```export``` creates new environment variable
 
 
-```echo $VAR``` accesses the value of environmental variable VAR
+> > ```echo $VAR``` accesses the value of environmental variable VAR
 
 
-```env``` prints out all environmental(global) variables
+> > ```env``` prints out all environmental(global) variables
 
 
-```env | grep USER``` finds all environmental variables with a word USER in the name of a variable or in its value
+> > ```env | grep USER``` finds all environmental variables with a word USER in the name of a variable or in its value
 
 
-```$|$``` takes the output from the command on the left from | , and "pipes" it to the command on the right
+> > ```$|$``` takes the output from the command on the left from | , and "pipes" it to the command on the right
 
 
-```mv``` renames files and directories
+> > ```mv``` renames files and directories
 
 
 ---
@@ -66,25 +66,25 @@ What do the following commands do:
 
 > > Q2 Response:
 
-`ls` lists out all directories and files in working directory
+> > `ls` lists out all directories and files in working directory
 
 
-`ls -a` includes directory entries whose name starts with a .
+> > `ls -a` includes directory entries whose name starts with a .
 
 
-`ls -l` lists directories and file names with details; the total size of all files is displayed in the terminal.
+> > `ls -l` lists directories and file names with details; the total size of all files is displayed in the terminal.
 
 
-`ls -lh` uses unit suffixes Byte, Kilobyte, etc., to display file size.
+> > `ls -lh` uses unit suffixes Byte, Kilobyte, etc., to display file size.
 
 
-`ls -lah` includes directory entries whose name starts with a . with details
+> > `ls -lah` includes directory entries whose name starts with a . with details
 
 
-`ls -t` sorts directory entries by time modified (most recently modified first) 
+> > `ls -t` sorts directory entries by time modified (most recently modified first) 
 
 
-`ls -Glp` this combination displays content of the directory with details using colorized input and a backslash(/) after each directory name
+> > `ls -Glp` this combination displays content of the directory with details using colorized input and a backslash(/) after each directory name
 
 ---
 
@@ -94,15 +94,15 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 > > Q3 Response:
 
-`ls -R` recursively lists all subdirectories encountered
+> > `ls -R` recursively lists all subdirectories encountered
 
-`ls -S` sort files by size
+> > `ls -S` sort files by size
 
-`ls -r` reverses the order of the sort
+> > `ls -r` reverses the order of the sort
 
-`ls -m` displays the names as a comma-separated list
+> > `ls -m` displays the names as a comma-separated list
 
-`ls -1` displays directory content as one entry per line
+> > `ls -1` displays directory content as one entry per line
 
 
 ---
@@ -111,7 +111,22 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Q4 Response:
+
+
+> > `xargs` - reads arguments from i/o-stream and passes them via a pipe to a command(this definition is very brief)
+
+
+> > Example: Below I create a new directory newdir, and two new text files, then look for all text files in current directory and move them to newdir.(I am using MAC)
+
+
+> > ```mkdir newdir```
+
+
+> > ```touch newfile1.txt newfile2.txt```
+
+
+> > ```find . -name '*.txt' | xargs -I {} mv {} /newdir```
 
  
 

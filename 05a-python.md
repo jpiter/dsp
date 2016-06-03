@@ -12,10 +12,10 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-> > Python lists and tuples are both indexed sets of values. Lists are mutable, which means you can access each element and change its value. Tuples are immutable, you can not change a value of the tuple element(which does not mean you can't delete or append elements to the existing tuple)
+> > Python lists and tuples are both indexed sets of values. Lists are mutable, which means you can access each element and change its value. Tuples are immutable, you can not change a value of a tuple element(which does not mean you can't delete or append elements to existing tuple)
 
 
-> >Tuples are best to use as keys in dictionaries. Keys are hashable, which means dictionaries associate a hash values with each key that points to each key-value pair. Changing keys will change hash values, thus compromising integrity of the dictionary.
+> >Tuples are best to use as keys in dictionaries. Keys are hashable, which means dictionaries associate a hash values with each key that points to each key-value pair. Changing keys will change hash values, thus compromising integrity of the dictionary. Since elements of a tupple could not be changed, it is best to use the latter.
 
 ---
 
@@ -25,13 +25,19 @@ How are Python lists and sets similar and different? Give examples of using both
 
 > > Lists and sets are both a collection of values. List's elements are indexed, you can access the value of each element by using the corresponding index. Sets are not indexed.
 
+> > Use sets to store unordered collection of values without duplicates, for example a set of all words used in an essay. Use lists to store an ordered collection of values. Searching in sets is faster than in lists, since set values are hashable.
+
 ---
 
 ###Q3. Lambda Function
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Lambda function capability allows to define an inline function. It is usually used as a callable function. See the example below:
+
+
+```sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())
+['differently', 'Some', 'sort', 'words']```
 
 ---
 

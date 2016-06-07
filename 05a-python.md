@@ -33,11 +33,11 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-> > Lambda function capability allows to define an inline function. It is usually used as a callable function. See the example below:
+> > Lambda function capability allows to define an inline function. It is usually used as a callable function. In the example below words are sorted in alphabetical order without any regard to capitalization.
 
-
-```sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())
-['differently', 'Some', 'sort', 'words']```
+```
+sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())
+```
 
 ---
 
@@ -47,17 +47,17 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 > > List comprehensions provide a concise way to create lists. For example, to make new lists where each element is the result of some operations applied to each member of another iterable set or to create a subsequence of those elements that satisfy a certain condition. Consider an example below.
 
-```>>> mylist=[1, -2, 0, -1, 5, -1.5]
->>> mylist
-[1, -2, 0, -1, 5, -1.5]
->>> squares = [x**2 for x in mylist]
->>> squares
-[1, 4, 0, 1, 25, 2.25]
->>> positives = [x for x in mylist if x > 0]
->>> positives
-[1, 5]```
-
-
+```
+   mylist=[1, -2, 0, -1, 5, -1.5] #initialize a list of values
+   squares_lc = [x**2 for x in mylist] #compute squares of mylist values using list comprehension
+   squares_map = list(map(lambda x: x**2, mylist)) #compute squares of mylist values using map function
+```
+   
+   
+```
+   positives_lc = [x for x in mylist if x > 0] #creates a list out of positive values from mylist using list comprehension
+   positives_lc = list(filter(lambda x: x>0, mylist)) #creates a list out of positive values from mylist using filter()
+```
 
 ---
 

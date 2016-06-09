@@ -59,6 +59,16 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
    positives_lc = list(filter(lambda x: x>0, mylist)) #creates a list out of positive values from mylist using filter()
 ```
 
+> > An example of a set comprehension below creates a new set, that consists of letters from the word 'abracadabra' that are niether 'a','b', or 'c'.
+
+```
+a = {x for x in 'abracadabra' if x not in 'abc'}
+```
+> > An example of a dictionary comprehension below creates a new dictionary, where keys are elements of the set (2,4,6), and corresponding values are their squares.
+
+```
+{x: x**2 for x in (2, 4, 6)}
+```
 ---
 
 ###Complete the following problems by editing the files below:

@@ -25,7 +25,7 @@ def match_ends(words):
     raise NotImplementedError
     
     
-    def front_x(words):
+def front_x(words):
     """
     Given a list of strings, return a list with the strings in sorted
     order, except group all the strings that begin with 'x' first.
@@ -38,9 +38,9 @@ def match_ends(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    words.sort()
+    words.sort() #sort all the words
     
-    words.sort(key = lambda x: x[0]=='x', reverse=True)
+    words.sort(key = lambda x: x[0]=='x', reverse=True) #sort again by the words that start with 'x'
     
     return words
     
@@ -48,7 +48,7 @@ def match_ends(words):
     
     
     
-    def sort_last(tuples):
+def sort_last(tuples):
     """
     Given a list of non-empty tuples, return a list sorted in
     increasing order by the last element in each tuple.
@@ -61,7 +61,7 @@ def match_ends(words):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    tuples.sort(key = lambda x: x[-1])    
+    tuples.sort(key = lambda x: x[-1])    #sort by the last element in the tuple
     
     return tuples
     
@@ -69,7 +69,7 @@ def match_ends(words):
     
     
     
-    def remove_adjacent(nums):
+def remove_adjacent(nums):
     """
     Given a list of numbers, return a list where all adjacent equal
     elements have been reduced to a single element, so [1, 2, 2, 3]
@@ -87,20 +87,20 @@ def match_ends(words):
     if nums==[]:
         return nums
     else:
-        new_nums = [nums[0]]
+        new_nums = [nums[0]] #create a new list with the first element from the old list
     
-    for x in nums[1:]:
+    for x in nums[1:]:  #for each entry in the old list, if it is not equal to the adjacent value, copy it to the new list
         
         if new_nums[-1]!=x:
-            new_nums.append(x)
+            new_nums.append(x) 
             
-    return new_nums
+    return new_nums #return the new list with no repeated agjacent elements
         
     raise NotImplementedError
     
-    
-    
-    def linear_merge(list1, list2):
+
+
+def linear_merge(list1, list2):
     """
     Given two lists sorted in increasing order, create and return a
     merged list of all the elements in sorted order. You may modify

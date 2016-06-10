@@ -41,3 +41,23 @@ unique_degree = set(degree)
 degree_dict = {x: degree.count(x) for x in unique_degree}
 
 # # # Q2 # # #
+parsed_title = d[' title']
+parsed_title = [str(x) for x in parsed_title]
+unique_title = set(parsed_title)
+
+title_dict = {x: parsed_title.count(x) for x in unique_title}
+
+parsed_email =d[' email']
+parsed_email = [str(x) for x in parsed_email]
+print("\nEmail List:\n")
+for x in parsed_email:
+    print(x)
+
+domains=[]
+for x in parsed_email:
+    ind = x.index("@")
+    domains.append(x[ind+1:])
+unique_domains = set(domains)
+print("\nUnique domains:\n")
+for x in unique_domains:
+    print(x)

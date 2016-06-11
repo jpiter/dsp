@@ -109,6 +109,8 @@ warren@upenn.edu
 bryanma@upenn.edu
 ```
 
+
+> > The file emails.csv is in dsp/python/ folder
 ---
 
 ### Part III - Dictionary
@@ -119,8 +121,14 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
               'Li': [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']]}
 ```
 Print the first 3 key and value pairs of the dictionary:
+```
+Bellamy ['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']
+Bilker ['PhD', 'Professor', 'warren@upenn.edu']
+Bryan ['PhD', 'Assistant Professor', 'bryanma@upenn.edu']
+Chen ['PhD', 'Associate Professor', 'jinboche@upenn.edu']
+Ellenberg [['PhD', 'Professor', 'sellenbe@upenn.edu'], ['PhD', 'Professor', 'jellenbe@mail.med.upenn.edu']]
+```
 
->> REPLACE THIS WITH YOUR RESPONSE
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -130,7 +138,7 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> REPLAC
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 

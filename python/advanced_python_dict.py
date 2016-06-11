@@ -15,7 +15,7 @@ info = list(map(list, zip(*csv_data[1:])))
 #dictionary by type of data('name',' degree', ' title', 'email')
 d = dict(zip(keys,info)) 
 
-#Q
+#Question 6
 parsed_degree = d[' degree']
 
 # removes white spaces and "."
@@ -63,7 +63,7 @@ faculty_dict =dict(zip(seen,dict_entry))
 for key in sorted(faculty_dict.items()):
     print(key[0],": " ,key[1])
     
-#Q7
+#Question 7
 #create a list of tuple of first and last names
 faculty=[]
 
@@ -75,7 +75,7 @@ professor_dict ={x[0]:list(x[1:]) for x in faculty}
 for x,v in professor_dict.items():
     print(x, ": ",v)
 
-#Q8
+#Question 8
 for x,v in sorted(professor_dict.items(), key = lambda x: x[0][1]):
     print(x, ": ",v)
     

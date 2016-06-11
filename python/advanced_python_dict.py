@@ -1,7 +1,6 @@
 import os
 import csv
 
-
 #os.chdir('/Users/jpiterbarg/ds/metis/prework/dsp/python/')
 
 f=open('faculty.csv')
@@ -44,8 +43,7 @@ faculty=list(zip(last_name, degree, short_title, parsed_email))
 seen=[]
 dict_entry=[]
 
-# I had to do this work around since keys should
-# have unique entries.
+# I had to do this workaround since keys should have unique entries.
 # If there already an entry for the key, I am creating
 # a new entry for the key that is a list of lists
 for x in faculty:
@@ -56,10 +54,9 @@ for x in faculty:
         seen.append(x[0])
         dict_entry.append(list(x[1:]))
 
-#tuple_for_dict=tuple(zip(last_name, dict_entry))
-#
 faculty_dict =dict(zip(seen,dict_entry))
 
+print("\nQuestion 6:\n")
 for key in sorted(faculty_dict.items()):
     print(key[0],": " ,key[1])
     
@@ -72,10 +69,12 @@ faculty=list(zip(first_last_name,degree, short_title, parsed_email))
 
 professor_dict ={x[0]:list(x[1:]) for x in faculty}
 
+print("\nQuestion 7:\n")
 for x,v in professor_dict.items():
     print(x, ": ",v)
 
 #Question 8
+print("\nQuestion 8:\n")
 for x,v in sorted(professor_dict.items(), key = lambda x: x[0][1]):
     print(x, ": ",v)
     

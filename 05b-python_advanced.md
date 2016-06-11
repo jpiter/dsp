@@ -109,9 +109,7 @@ warren@upenn.edu
 bryanma@upenn.edu
 ```
 
-
 > > The file emails.csv is in dsp/python/ folder
----
 
 ### Part III - Dictionary
 
@@ -121,12 +119,14 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
               'Li': [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']]}
 ```
 Print the first 3 key and value pairs of the dictionary:
+
+> >  I am printing first 5 entries. I had to do a work around for Ellenberg, but it worked out.
 ```
-Bellamy ['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']
-Bilker ['PhD', 'Professor', 'warren@upenn.edu']
-Bryan ['PhD', 'Assistant Professor', 'bryanma@upenn.edu']
-Chen ['PhD', 'Associate Professor', 'jinboche@upenn.edu']
-Ellenberg [['PhD', 'Professor', 'sellenbe@upenn.edu'], ['PhD', 'Professor', 'jellenbe@mail.med.upenn.edu']]
+Bellamy :  ['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']
+Bilker :  ['PhD', 'Professor', 'warren@upenn.edu']
+Bryan :  ['PhD', 'Assistant Professor', 'bryanma@upenn.edu']
+Chen :  ['PhD', 'Associate Professor', 'jinboche@upenn.edu']
+Ellenberg :  [['PhD', 'Professor', 'sellenbe@upenn.edu'], ['PhD', 'Professor', 'jellenbe@mail.med.upenn.edu']]
 ```
 
 
@@ -139,12 +139,13 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 Print the first 3 key and value pairs of the dictionary:
 
 ```
+'Knashawn', 'Morales') :  ['ScD', 'Associate Professor', 'knashawn@mail.med.upenn.edu']
+('Sharon', 'Xie') :  ['PhD', 'Associate Professor', 'sxie@mail.med.upenn.edu']
 ('Pamela', 'Shaw') :  ['PhD', 'Assistant Professor', 'shawp@upenn.edu']
-('Andrea', 'Troxel') :  ['ScD', 'Professor', 'atroxel@mail.med.upenn.edu']
-('Mary', 'Putt') :  ['PhD ScD', 'Professor', 'mputt@mail.med.upenn.edu']
+
 ```
 
-> > Question to Reshama: Would applying regex fix my fourth entry? Why does my dictionary is not printing by first name?(Q8)
+> > Question to Reshama: Would applying regex fix my fourth entry? Why does my dictionary not printing by first name?(Q8)
 
 
 ```('J.', 'Landis') :  ['BSEd MS PhD', 'Professor', 'jrlandis@mail.med.upenn.edu']```

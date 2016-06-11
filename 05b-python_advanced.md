@@ -111,6 +111,7 @@ bryanma@upenn.edu
 
 > > The file emails.csv is in dsp/python/ folder
 
+
 ### Part III - Dictionary
 
 ####Q6.  Create a dictionary in the below format:
@@ -120,7 +121,8 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
-> >  I am printing first 5 entries. I had to do a work around for Ellenberg, but it worked out.
+> > I am printing 5 entries. I had to do a work around in order for the last name Ellenberg to work.
+
 ```
 Bellamy :  ['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']
 Bilker :  ['PhD', 'Professor', 'warren@upenn.edu']
@@ -139,10 +141,9 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 Print the first 3 key and value pairs of the dictionary:
 
 ```
-'Knashawn', 'Morales') :  ['ScD', 'Associate Professor', 'knashawn@mail.med.upenn.edu']
+('Knashawn', 'Morales') :  ['ScD', 'Associate Professor', 'knashawn@mail.med.upenn.edu']
 ('Sharon', 'Xie') :  ['PhD', 'Associate Professor', 'sxie@mail.med.upenn.edu']
 ('Pamela', 'Shaw') :  ['PhD', 'Assistant Professor', 'shawp@upenn.edu']
-
 ```
 
 > > Question to Reshama: Would applying regex fix my fourth entry? Why does my dictionary not printing by first name?(Q8)

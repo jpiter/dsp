@@ -1,9 +1,9 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
-> > First, I plotted two superimposed histograms. Since each different value works as a class, for totalwgt_lb there are too many bins, and the histograms are not easy to compare. It does look that two data sets are not much different. The pictures is attached below.
+> > First, I plotted two superimposed histograms. Since each different value works as a class, for totalwgt_lb there are too many bins, and the histograms are not easy to compare. It does look that two data sets are not much different. The histogram is attached below.
 
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/jpiter/dsp/blob/master/statistics/Histograms_BabyWeight.png)
 
 > > The Cohen's d size effect,  is -0.0887 which is considered to be very small. So there is no difference in weight between first and other babies.
 

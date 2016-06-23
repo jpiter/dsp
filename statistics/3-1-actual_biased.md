@@ -2,7 +2,7 @@
 
 > > For "number of siblings" survey, the actual and biased pmfs are compared in the plot below.
 
-![alt text](https://github.com/jpiter/dsp/blob/master/statistics/pmf_familysize.png)
+<img src="https://github.com/jpiter/dsp/blob/master/statistics/pmf_familysize.png" width="400">
 
 > > The mean computed from the actual pmf is 1.02, and the biased mean computed from simulated responses is 2.4. As expected, since kids from families with more siblings are presented by a larger group in a sample, the actual mean gets overestimated. The code is included below.
 

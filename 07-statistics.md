@@ -81,7 +81,7 @@ P(A|E) = P(E|A)P(A)/P(E) = P(E|A)*P(A )/ (P(A)+P(B)) = (1*1/300)/(1/125+1/300)=0
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> > The frequentist approach assumes a certain model for the distribution, and uses data to estimate parameters of the distribution. In the Bayesian approach both model and parameters of distribution may change based on new information, aka data observed.
 
 ---
 
